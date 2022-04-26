@@ -1,0 +1,32 @@
+.problem {
+  // .problem__container
+  background-color: $mainColor;
+  @include adaptiveValue("padding-top", 48, 24);
+  @include adaptiveValue("padding-bottom", 92, 32);
+  &__container {
+  }
+
+  // .problem__body
+
+  &__body {
+  }
+
+  // .problem__title
+
+  &__title {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  // .problem__text
+
+  &__text {
+    
+    & > p > span {
+      font-weight: 700;
+    }
+    & > p:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 50, 20);
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.team {
+  background-color: $mainColor;
+  @include adaptiveValue("padding-top", 58, 24);
+  @include adaptiveValue("padding-bottom", 84, 24);
+  // .team__container
+
+  &__container {
+  }
+
+  // .team__body
+
+  &__body {
+  }
+
+  // .team__title
+
+  &__title {
+    text-align: center;
+    @include adaptiveValue("margin-bottom", 32, 16);
+  }
+
+  // .team__items
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
+  // .team__item
+
+  &__item {
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 350px;
+  // .item__image
+
+  &__image {
+    border: 0.5px solid black;
+    border-radius: 50%;
+    margin-bottom: 12px;
+  }
+
+  // .item__title
+
+  &__title {
+    font-weight: 700;
+    color: $h2titleColor;
+    font-size: 24px;
+    line-height: math.div(28 , 24);
+  }
+
+  // .item__sub-title
+
+  &__sub-title {
+    font-style: italic;
+    color: $black;
+    font-size: 18px;
+    line-height: math.div(21 , 18);
+  }
+}

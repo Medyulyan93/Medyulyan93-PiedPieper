@@ -1,0 +1,25 @@
+.hero {
+  background: url("@img/background2.jpg") 0 0 / cover no-repeat;
+  @include adaptiveValue("padding-top", 128, 32);
+  @include adaptiveValue("padding-bottom", 128, 32);
+  // .hero__container
+
+  &__container {
+  }
+
+  // .hero__body
+
+  &__body {
+    text-align: center;
+  }
+
+  // .hero__text
+
+  &__text {
+    color: $white;
+    font-style: italic;
+    font-weight: 500;
+    @include adaptiveValue("font-size", 48, 16);
+    line-height: math.div(56, 48);
+  }
+}

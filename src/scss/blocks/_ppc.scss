@@ -1,0 +1,44 @@
+.ppc {
+  background-color: $white;
+  @include adaptiveValue("padding-top", 48, 24);
+  @include adaptiveValue("padding-bottom", 92, 32);
+  // .ppc__container
+
+  &__container {
+  }
+
+  // .ppc__body
+
+  &__body {
+  }
+
+  // .ppc__title
+
+  &__title {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+
+.content-ppc {
+  &__text:not(:last-child) {
+    @include adaptiveValue("margin-bottom", 40, 15);
+  }
+  // .content-ppc__top
+
+  &__top {
+    display: flex;
+    column-gap: 48px;
+    @include adaptiveValue("margin-bottom", 40, 15);
+    @include adaptiveValue("column-gap", 48, 15);
+    & > p > span {
+      font-style: italic;
+    }
+  }
+
+  // .content-ppc__image
+
+  &__image {
+    object-fit: cover;
+  }
+}

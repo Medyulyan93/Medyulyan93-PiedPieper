@@ -1,0 +1,22 @@
+//====================================================================================================
+.footer {
+  background-color: $footerColor;
+  @include adaptiveValue("padding-top", 50, 12);
+  @include adaptiveValue("padding-bottom", 62, 12);
+  // .footer__container
+
+  &__container {
+  }
+
+  // .footer__text
+
+  &__text {
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: math.div(21, 18);
+  }
+}
+
+//====================================================================================================

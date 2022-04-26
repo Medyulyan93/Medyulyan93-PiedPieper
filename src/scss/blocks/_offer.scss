@@ -1,0 +1,27 @@
+.offer {
+  background: url('@img/cover.jpg') 0 0 / cover no-repeat;
+  // .offer__container
+  @include adaptiveValue("padding-top", 180, 65 );
+  @include adaptiveValue("padding-bottom", 140, 30 );
+  
+  &__container {
+  }
+
+  // .offer__content
+
+  &__content {
+    text-align: center;
+  }
+
+  // .offer__title
+
+  &__title {
+    font-weight: 500;
+    @include adaptiveValue("font-size", 72, 60);
+    line-height: math.div(84 , 72);
+    
+    
+  }
+}
+.title-offer {
+}

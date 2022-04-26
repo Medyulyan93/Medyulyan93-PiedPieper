@@ -1,0 +1,12 @@
+// Заголовки, общие БЄМ блоки и проче...
+.h2-title {
+  font-weight: 500;
+  color: $h2titleColor;
+  @include adaptiveValue("font-size", 64, 32);
+  line-height: math.div(75, 64);
+}
+.text {
+  color: $black;
+  @include adaptiveValue("font-size", 38, 16);
+  line-height: math.div(38, 32);
+}
