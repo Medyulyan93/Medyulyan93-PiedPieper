@@ -56,9 +56,10 @@ $mobileSmall: em(479.98); // Телефоны S
 
 body {
 	// Скролл заблокирован
-	.lock & {
+	&._lock  {
 		overflow: hidden;
 		touch-action: none;
+		
 	}
 	// Сайт загружен
 	.loaded & {
